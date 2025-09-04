@@ -4,7 +4,7 @@ const dateInput = document.getElementById("date-input");
 const todoList = document.getElementById("todo-list");
 const filterInput = document.getElementById("filter-input");
 
-// Tambah To-Do
+
 form.addEventListener("submit", function(e) {
   e.preventDefault();
 
@@ -21,7 +21,7 @@ form.addEventListener("submit", function(e) {
 
   todoList.appendChild(li);
 
-  // Reset input
+
   todoInput.value = "";
   dateInput.value = "";
 });
@@ -33,7 +33,7 @@ todoList.addEventListener("click", function(e) {
   }
 });
 
-// Filter To-Do
+
 filterInput.addEventListener("keyup", function(e) {
   const text = e.target.value.toLowerCase();
   document.querySelectorAll("#todo-list li").forEach(function(item) {
